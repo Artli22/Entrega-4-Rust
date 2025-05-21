@@ -59,13 +59,15 @@ fn imprimir_concesionario(concesionario: &Concesionario) {
 fn main() {
     // Se crean las diferentes listas para definir los elementos de la marca Ferrari
     let piezas_f40 = Lista::Cons(
-        Pieza("piezaAF".to_string()),
-        Box::new(Lista::Cons(Pieza("piezaBF".to_string()), Box::new(Lista::Nil))),
+        Pieza("piezaAFF".to_string()),
+        Box::new(Lista::Cons(Pieza("piezaBFF".to_string()), Box::new(Lista::Cons(Pieza("piezaCFF".to_string()),
+         Box::new(Lista::Nil))))),
     );
 
     let piezas_330p4 = Lista::Cons(
-        Pieza("piezaAP".to_string()),
-        Box::new(Lista::Cons(Pieza("piezaBP".to_string()), Box::new(Lista::Nil))),
+        Pieza("piezaAFP".to_string()),
+        Box::new(Lista::Cons(Pieza("piezaBFP".to_string()), Box::new(Lista::Cons(Pieza("piezaCFP".to_string()),
+         Box::new(Lista::Nil))))),
     );
 
     let modelo_f40 = Modelo {
@@ -87,8 +89,9 @@ fn main() {
 
     // Se crean las diferentes listas para definir los elementos de la marca Porshe 
     let piezas_718 = Lista::Cons(
-        Pieza("piezaAN".to_string()),
-        Box::new(Lista::Cons(Pieza("piezaBN".to_string()), Box::new(Lista::Nil))),
+        Pieza("piezaA7P".to_string()),
+        Box::new(Lista::Cons(Pieza("piezaB7P".to_string()), Box::new(Lista::Cons(Pieza("piezaC7P".to_string()),
+        Box::new(Lista::Nil))))),
     );
 
     let modelo_718 = Modelo {
@@ -97,8 +100,9 @@ fn main() {
     };
 
     let piezas_911 = Lista::Cons(
-        Pieza("piezaCP".to_string()),
-        Box::new(Lista::Cons(Pieza("piezaDP".to_string()), Box::new(Lista::Nil))),
+        Pieza("piezaA9P".to_string()),
+        Box::new(Lista::Cons(Pieza("piezaB9P".to_string()), Box::new(Lista::Cons(Pieza("piezaC9P".to_string()),
+        Box::new(Lista::Nil))))),
     );
 
     let modelo_911 = Modelo {
@@ -115,8 +119,9 @@ fn main() {
 
     // Se crean las diferentes listas para definir los elementos de la marca Nissan 
     let piezas_gtr = Lista::Cons(
-        Pieza("piezaXP".to_string()),
-        Box::new(Lista::Cons(Pieza("piezaYP".to_string()), Box::new(Lista::Nil))),
+        Pieza("piezaAGN".to_string()),
+        Box::new(Lista::Cons(Pieza("piezaBGN".to_string()), Box::new(Lista::Cons(Pieza("piezaCGN".to_string()),
+        Box::new(Lista::Nil))))),
     );
 
     let modelo_gtr = Modelo {
